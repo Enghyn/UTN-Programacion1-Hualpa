@@ -6,7 +6,7 @@ cliente = input("Por favor, ingrese su nombre y apellido: ")
 
 #Entrada y Validación del CUIT
 cuit = input("Por favor, ingrese su CUIT (ej: 20-12345678-9): ")
- 
+
 while True:
     if len(cuit) != 13 or cuit[2] != '-' or cuit[11] != '-' or not (cuit.replace('-', '').isdigit()):
         print("CUIT inválido. Asegúrese de que tenga el formato correcto (ej: 20-12345678-9).")
