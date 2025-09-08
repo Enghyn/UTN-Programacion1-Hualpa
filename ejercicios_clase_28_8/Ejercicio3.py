@@ -27,7 +27,7 @@ if antiguedad_laboral < 1:
     print("Lo sentimos, no es elegible para un crédito debido a su antigüedad laboral.")
     exit()
 
-#Seteo, Entrada y Validación de Historial Crediticio
+#Entrada y Validación de Historial Crediticio
 HISTORIAL = {1: "Bueno", 2: "Regular", 3: "Malo"}
 historial_crediticio = int(input("Por favor, ingrese su historial crediticio (1-Bueno | 2-Regular | 3-Malo): "))
 
