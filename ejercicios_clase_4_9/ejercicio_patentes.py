@@ -14,10 +14,7 @@ while True:
 
 ABECEDARIO = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 NUMERO_MAXIMO = 9
-
-longitud_numero = len(str(numero_a_ingresar))
 LONGITUD_PATENTE = 6
-
 
 patente_numero = []
 for elemento in PATENTE:
@@ -30,7 +27,7 @@ for elemento in PATENTE:
 fuera_de_rango = False
 for i in range(numero_a_ingresar):
     patente_numero[5] += 1
-    for i in range(len(patente_numero) - 1, -1, -1):
+    for i in range(LONGITUD_PATENTE - 1, -1, -1):
         if i >= 3:
             if patente_numero[i] > NUMERO_MAXIMO:
                 patente_numero[i] -= NUMERO_MAXIMO + 1
@@ -46,7 +43,7 @@ for i in range(numero_a_ingresar):
 
 if not fuera_de_rango:
     nueva_patente = ""
-    for i in range(len(patente_numero)):
+    for i in range(LONGITUD_PATENTE):
         if i <= 2:
             nueva_patente += ABECEDARIO[patente_numero[i]]
         else:
