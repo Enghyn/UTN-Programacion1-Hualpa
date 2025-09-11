@@ -48,7 +48,7 @@ alumnos = [
     "Tiziano Ignacio Valentini",
     "Matias Nicolas Vargas",
     "Juan Ignacio Videla Continella",
-    "Pablo Exequiel Avalos"
+    "Pablo Exequiel Avalos"
 ]
 
 import random
