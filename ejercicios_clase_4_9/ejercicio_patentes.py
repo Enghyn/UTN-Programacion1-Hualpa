@@ -26,14 +26,14 @@ for elemento in PATENTE:
 if numero_a_ingresar > 676000:
     patente_numero[0] += numero_a_ingresar // 676000
     numero_a_ingresar = numero_a_ingresar % 676000
-    if numero_a_ingresar > 26000:
-        patente_numero[1] += numero_a_ingresar // 26000
-        numero_a_ingresar = numero_a_ingresar % 26000
-        if numero_a_ingresar > 1000:
-            patente_numero[2] += numero_a_ingresar // 1000
-            numero_a_ingresar = numero_a_ingresar % 1000
-            if numero_a_ingresar > 0:
-                patente_numero[3] += numero_a_ingresar
+if numero_a_ingresar > 26000:
+    patente_numero[1] += numero_a_ingresar // 26000
+    numero_a_ingresar = numero_a_ingresar % 26000
+if numero_a_ingresar > 1000:
+    patente_numero[2] += numero_a_ingresar // 1000
+    numero_a_ingresar = numero_a_ingresar % 1000
+if numero_a_ingresar > 0:
+    patente_numero[3] += numero_a_ingresar
 
 LONGITUD_PATENTE = len(patente_numero)
 
