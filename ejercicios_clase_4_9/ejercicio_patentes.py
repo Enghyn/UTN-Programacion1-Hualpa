@@ -14,6 +14,7 @@ while True:
 
 ABECEDARIO = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 NUMERO_MAXIMO = 999
+LETRAS_MAXIMO = len(ABECEDARIO)
 
 patente_numero = []
 for elemento in PATENTE:
@@ -41,10 +42,10 @@ for i in range(LONGITUD_PATENTE - 1, -1, -1):
     if i == 3 and patente_numero[i] > NUMERO_MAXIMO:
         patente_numero[i] -= NUMERO_MAXIMO + 1
         patente_numero[i - 1] += 1
-    elif 3 > i > 0 and patente_numero[i] >= len(ABECEDARIO):
-        patente_numero[i] -= len(ABECEDARIO)
+    elif 3 > i > 0 and patente_numero[i] >= LETRAS_MAXIMO:
+        patente_numero[i] -= LETRAS_MAXIMO
         patente_numero[i - 1] += 1
-    elif i == 0 and patente_numero[i] >= len(ABECEDARIO):
+    elif i == 0 and patente_numero[i] >= LETRAS_MAXIMO:
         print("Patente fuera de rango")
         exit()
 
